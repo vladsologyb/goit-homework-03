@@ -12,10 +12,38 @@ body {
     list-style: none;
 }
 
+ul, ol {
+list-style-type: none;
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
 /* ===============header========== */
+.header {
+    border-bottom: 1px solid  #E7E9FC;
+}
 
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
-
+.header-navigation {
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
 
 .header-logo {
     color: #4D5AE5;
@@ -44,6 +72,7 @@ body {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        padding: 24px 0 24px;
 }
 
 .header-menu-link:hover, .header-menu-link:focus {
@@ -52,6 +81,11 @@ body {
 
 .contacts {
     font-style: normal;
+}
+
+.contacts-menu {
+    display: flex;
+    gap: 40px;
 }
 
 .contacts-menu-link {
@@ -71,7 +105,13 @@ body {
 /* =============hero===================== */
 
 .hero {
-    background: #2E2F42;
+    padding-bottom: 120px;
+    
+}
+
+.hero-container {
+background: #2E2F42;
+padding: 188px 472px 292px 472px;
 }
 
 .hero-title {
@@ -81,6 +121,8 @@ body {
         font-weight: 700;
         line-height: 1.07;
         letter-spacing: 0.02em;
+        margin-bottom: 48px;
+        min-width: 496px;
 }
 
 .hero-buy-btn {
@@ -98,6 +140,10 @@ body {
     background: #404BBF;
 }
 
+.features {
+    border-top: none;
+}
+
 .visually-hidden {
     color: #2E2F42;
 }
@@ -108,6 +154,7 @@ body {
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -124,6 +171,7 @@ color:  #434455;
 
 .team {
     background: #F4F4FD;
+    padding-top: 120px;
 }
 
 .team-title {
@@ -134,10 +182,15 @@ color:  #434455;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-bottom: 72px;
 }
 
 .team-item {
     background-color: #FFF;
+}
+
+.team-img {
+    margin-bottom: 32px;
 }
 
 .team-subtitle {
@@ -162,6 +215,11 @@ color:  #434455;
 
 /* ==============portfolio================ */
 
+.portfolio {
+    padding-top: 120px;
+    text-align: center;
+}
+
 
 .portfolio-title {
     color:  #2E2F42;
@@ -171,11 +229,27 @@ color:  #434455;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+
+.portfolio-menu {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+
 }
 
 .portfolio-item {
     background-color: #FFF;
+    border: 1px solid #E7E9FC;
+    text-align: center;
 }
+
+.portfolio-img {
+    margin-bottom: 32px;
+}
+
 
 .portfolio-subtitle {
     color: #2E2F42;
@@ -183,6 +257,7 @@ color:  #434455;
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 
 .portfolio-item-text {
