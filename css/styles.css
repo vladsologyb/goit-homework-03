@@ -242,6 +242,7 @@ color:  #434455;
     display: flex;
     justify-content: center;
     gap: 24px;
+    
 }
 
 .team-item {
@@ -251,6 +252,11 @@ color:  #434455;
 
 .team-img {
     margin-bottom: 32px;
+}
+
+.team-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .team-subtitle {
